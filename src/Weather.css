@@ -1,10 +1,38 @@
 .App {
-  font-family: sans-serif;
-  text-align: center;
-  border: 2px solid black;
+  margin: 0 auto;
   width: 600px;
-  margin: 50px 50px 50px 50px;
+  font-family: "Courier New", Courier, monospace;
 }
-.App li {
+.weather {
+  padding: 10px 10px 10px 10px;
+  border: 1.5px solid #dadde1;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.weather li {
   list-style: none;
+}
+.weather h1 {
+  margin: 20px 0 0 0;
+}
+.temperature {
+  font-weight: bold;
+  line-height: 64px;
+  font-size: 64px;
+}
+.weather ul {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  margin-bottom: 30px;
+}
+.weather img {
+  height: 94px;
+  display: inline-block;
+  margin-right: 9px;
+}
+.unit {
+  position: relative;
+  top: -32px;
 }
