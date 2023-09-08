@@ -8,6 +8,7 @@
   border: 1.5px solid #dadde1;
   margin-top: 50px;
   border-radius: 10px;
+  background-color: #c3b0eb;
 }
 .weather li {
   list-style: none;
@@ -42,7 +43,11 @@
 }
 footer {
   margin-top: 10px;
+  text-align: center;
 }
 footer a {
   text-decoration: none;
+}
+.btn-primary {
+  color: bisque;
 }
