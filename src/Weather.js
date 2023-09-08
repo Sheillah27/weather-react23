@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
-import WeatherInfo from "./WeatherInfo";
+import Climate from "./Climate";
 
-export default function Weather(props) {
+export default function Weather() {
   let [ready, setReady] = useState(false);
   let [weatherData, setWeatherData] = useState({});
   function showTemperature(response) {
@@ -17,11 +17,8 @@ export default function Weather(props) {
     });
     setReady(true);
   }
-  let apiKey = "5a3a229d5b0ff9b918233984e0904dfb";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${weatherData.city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
 
-  if (weatherData.ready)
+  if (ready) {
     return (
       <div className="weather">
         <form>
@@ -36,13 +33,19 @@ export default function Weather(props) {
             <div className="col-3 ">
               <input
                 type="Submit"
-                value=" Search"
+                value="Search"
                 className="btn btn-primary w-100"
               />
             </div>
           </div>
         </form>
-        <WeatherInfo data={weatherData} />
+        <Climate data={weatherData} />
       </div>
     );
+  } else {
+    let city = "Nairobi";
+    let apiKey = "5a3a229d5b0ff9b918233984e0904dfb";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    axios.get(apiUrl).then(showTemperature);
+  }
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 
-export default function WeatherInfo(props) {
+export default function Climate(props) {
   return (
     <div>
       <div className="header">
-        <h1>{props.data.city}</h1>
+        <h1>Nairobi</h1>
         <ul>
           <li>
             <FormatDate date={props.data.date} />
