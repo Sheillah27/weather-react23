@@ -3,9 +3,9 @@ import FormatDate from "./FormatDate";
 
 export default function Climate(props) {
   return (
-    <div>
+    <div className="climate">
       <div className="header">
-        <h1>Nairobi</h1>
+        <h1>{props.data.city}</h1>
         <ul>
           <li>
             <FormatDate date={props.data.date} />
