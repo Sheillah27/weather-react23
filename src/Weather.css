@@ -35,4 +35,14 @@
 .unit {
   position: relative;
   top: -32px;
+  text-transform: none;
+}
+.unit a {
+  text-decoration: none;
+}
+footer {
+  margin-top: 10px;
+}
+footer a {
+  text-decoration: none;
 }

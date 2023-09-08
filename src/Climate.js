@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import Units from "./Units";
 
 export default function Climate(props) {
   return (
@@ -15,15 +16,10 @@ export default function Climate(props) {
       </div>
       <div className="row">
         <div className="col-6">
-          <div className="clearfix">
+          <div>
             {" "}
-            <img
-              src={props.data.icon}
-              alt="broken clouds"
-              className="float-left"
-            />{" "}
-            <span className="temperature">{props.data.temperature}</span>{" "}
-            <span className="unit">℃</span>
+            <img src={props.data.icon} alt="broken clouds" />{" "}
+            <Units celsius={props.data.temperature} />
           </div>
         </div>
         <div className="col-6">
