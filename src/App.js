@@ -7,7 +7,13 @@ function App() {
       <footer>
         <p>
           This app was codded by Sheillah and is open sourced on
-          <a href=""> Github </a>
+          <a
+            href="https://github.com/Sheillah27/weather-react23"
+            target="-blank"
+          >
+            {" "}
+            Github{" "}
+          </a>
         </p>
       </footer>
     </div>
