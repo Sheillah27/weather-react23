@@ -1,14 +1,13 @@
 .App {
   margin: 0 auto;
   width: 600px;
-  font-family: "Courier New", Courier, monospace;
 }
 .weather {
   padding: 10px 10px 10px 10px;
   border: 1.5px solid #dadde1;
   margin-top: 50px;
   border-radius: 10px;
-  background-color: #bbe7f1;
+  background-color: #eadedb;
 }
 .weather li {
   list-style: none;
